@@ -44,9 +44,9 @@ thumb.py:train and test the one of the five finger(thumb,index,middle,ring,littl
           test_**** include ID(501-600)
        
   ## run
-    main.py:train the model if you input train else test
-    try.py:train the model if you input train else test
-    thumb.py:train the model if you input train else test and you can simply modify the mode='middle','ring','index','litte'. 
+    main.py:modify the data_dir to fit yours,train the model if you input train else test.
+    try.py:modify the data_dir to fit yours,train the model if you input train else test.
+    thumb.py:modify the data_dir to fit yours,train the model if you input train else test and you can simply modify the mode='middle','ring','index','litte'. 
 
 
 
