@@ -54,6 +54,10 @@ thumb.py:train and test the one of the five finger(thumb,index,middle,ring,littl
     total samples: 45997, training samples: 41289, validation samples: 4708
     mean 0.5697416079349641
     std 0.3744768065561571
+    
+    
+# Result
+    We can't use fingerprint images to identify gender, but we can do a good job of telling whether a fingerprint image is a thumb or not.
 
 
 
