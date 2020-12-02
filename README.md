@@ -1,6 +1,9 @@
 # fingerPrintDiff
 This project is just for our deep learning course design.
 
+# Installation
+git clone https://github.com/q136766658/fingerPrintDiff.git
+
 # Dependence
 python3.6
 keras==2.0.9
