@@ -8,6 +8,7 @@ import keras
 import numpy as np
 from sklearn.metrics import roc_auc_score,auc,roc_curve
 from keras.callbacks import EarlyStopping
+data_dir = 'F:/finger/mySOCOFing2'
 model_name = 'gender_model.h5'
 batch_size = 128
 n_classes = 2
@@ -15,7 +16,7 @@ img_size = 96
 if __name__ == '__main__':
     cmd = input('train or test?\n')
     if cmd == 'train':
-        train_sequence, validation_sequence = data_flow(data_dir = 'F:/finger/mySOCOFing2',
+        train_sequence, validation_sequence = data_flow(data_dir = data_dir,
                                                         batch_size = batch_size,
                                                         num_classes = n_classes,
                                                         input_size = img_size,
@@ -101,13 +102,13 @@ if __name__ == '__main__':
         plt.legend(['Train', 'Val'], loc='upper left')
         plt.show()
     else:
-        train_sequence, validation_sequence = data_flow(data_dir='F:/finger/mySOCOFing2',
+        train_sequence, validation_sequence = data_flow(data_dir=data_dir,
                                                         batch_size=batch_size,
                                                         num_classes=n_classes,
                                                         input_size=img_size,
                                                         mode='gender',
                                                         train=True)
-        test_sequence = data_flow(data_dir='F:/finger/mySOCOFing2',
+        test_sequence = data_flow(data_dir=data_dir,
                                   batch_size=batch_size,
                                   num_classes=n_classes,
                                   input_size=img_size,
